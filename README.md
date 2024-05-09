@@ -1,3 +1,3 @@
-# Headline
+# About
 
 > An awesome project.
