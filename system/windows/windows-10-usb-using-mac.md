@@ -27,6 +27,7 @@ diskutil eraseDisk MS-DOS "WIN10" GPT /dev/disk2
 ## Step 3: Copy the Windows 10 ISO over to your USB Drive
 The maximum possible size for a file on a FAT32 volume is 4 GB.
 One of the files in the Windows 10 ISO – install.wim – is now too large to copy over to a FAT-32 formatted USB drive.
+So you need to [split the Windows image file](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/split-a-windows-image--wim--file-to-span-across-multiple-dvds?view=windows-10)
 
 ```shell
 rsync -vha --progress --exclude=sources/install.wim /Volumes/CCCOMA_X64FRE_EN-US_DV9/* /Volumes/WIN10
